@@ -1,0 +1,5 @@
+# Ignore swap files from editors
+*.swp
+
+# Ignore local task data
+tasks.json
