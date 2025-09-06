@@ -49,6 +49,9 @@ def add_task(tasks, description):
 def main():
     # Load tasks from file (or empty if first run)
     tasks = load_tasks()
+    print("\nWhat do you want to do?")
+    print("1. Add task")
+    print("2. List tasks")
 
     # Ask user to type a new task
     desc = input("Enter a task: ")
