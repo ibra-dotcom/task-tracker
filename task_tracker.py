@@ -51,13 +51,15 @@ def main():
     tasks = load_tasks()
     print("\nWhat do you want to do?")
     print("1. Add task")
-    print("2. List tasks")
+    print("2. List choice = input("Enter choice (1/2): ")
 
-    # Ask user to type a new task
-    desc = input("Enter a task: ")
-
-    # Add the task to the list + save
-    add_task(tasks, desc)
+    if choice == "1":
+        desc = input("Enter a task: ")
+        add_task(tasks, desc)
+    elif choice == "2":
+        list_tasks(tasks)
+    else:
+        print("⚠️ Invalid choice.")
 
 
 # ------------------------------
